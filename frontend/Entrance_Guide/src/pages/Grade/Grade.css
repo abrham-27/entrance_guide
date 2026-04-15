@@ -1,0 +1,83 @@
+/* Styles shared by all grade pages */
+
+.grade-page {
+  font-family: 'Arial', sans-serif;
+  width: 100vw;             /* full browser width */
+  overflow-x: hidden;       /* prevent horizontal scroll */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* account for fixed header */
+}
+
+.grade-section {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grade-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 40px; /* increased spacing between course links */
+}
+
+.course-list li a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 1px solid #0070f3;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.course-list li a:hover {
+  background-color: #0070f3;
+  color: white;
+}
+
+/* for grade 11/12 two-column split */
+.split-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* increased spacing between the two science columns */
+  flex-wrap: wrap;
+}
+
+.split-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.split-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .split-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

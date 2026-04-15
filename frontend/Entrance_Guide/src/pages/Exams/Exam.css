@@ -1,0 +1,136 @@
+/* Styles for exam year pages */
+
+.exam-page {
+  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* account for fixed header */
+}
+
+.exam-section {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exam-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.exam-course-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.exam-course-item {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.course-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.course-links {
+  display: flex;
+  gap: 15px;
+}
+
+.exam-link {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 1px solid #0070f3;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.exam-link:hover {
+  background: #0070f3;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .exam-course-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .course-links {
+    justify-content: flex-start;
+  }
+}
+
+/* Viewer Section */
+.viewer-section {
+    text-align: left;
+}
+
+.viewer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.error-box {
+    background: #fff1f2;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+.download-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-download-pdf {
+    background: #0070f3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-download-pdf:hover {
+    background: #0051b3;
+}

@@ -1,0 +1,112 @@
+/* GradeManagement.css */
+.grade-management-container {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.grade-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.grade-card-link {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grade-card-link:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+    transform: translateY(-5px);
+}
+
+.grade-card-link.active {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: white;
+}
+
+.grade-card-link h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+
+.btn-back {
+    padding: 8px 16px;
+    background: #64748b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.grade-form-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.resource-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.resource-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resource-table th {
+    background: #f8fafc;
+    padding: 15px;
+    text-align: left;
+    color: #475569;
+    font-weight: 600;
+}
+
+.resource-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.book-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

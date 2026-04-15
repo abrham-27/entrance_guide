@@ -1,0 +1,166 @@
+/* Header Container */
+.header {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav a, .dropbtn {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover, .dropbtn:hover {
+  background-color: rgba(0, 112, 243, 0.1);
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;           /* hide by default */
+  position: absolute;      /* absolute relative to .dropdown */
+  top: 100%;               /* below the button */
+  left: 0;
+  min-width: 150px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  z-index: 1100;           /* higher than hero */
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 112, 243, 0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Auth Links */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.auth a:hover {
+  background-color: rgba(0, 112, 243, 0.1);
+}
+
+/* User Account */
+.user-account {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .auth {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .nav a, .dropbtn {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
+  }
+}

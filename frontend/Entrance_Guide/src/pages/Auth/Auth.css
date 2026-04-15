@@ -1,0 +1,106 @@
+/* Styles for Login and Signup pages */
+
+.auth-page {
+  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* account for fixed header */
+}
+
+.auth-section {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-section h2 {
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0070f3;
+}
+
+.auth-btn {
+  padding: 12px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #005bb5;
+}
+
+.auth-link {
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.auth-link a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-section {
+    padding: 40px 20px;
+  }
+}
+
+/* profile page overrides */
+.profile-form .form-group {
+  margin-bottom: 15px;
+}
+
+.profile-form .auth-btn {
+  background-color: #10b981;
+}
+
+.profile-form .auth-btn:hover {
+  background-color: #059669;
+}
