@@ -114,9 +114,7 @@ Track academic growth
 ☁️ Online deployment
 ## 📸 Screenshots
 
-> Add screenshots here for better presentation.
 
-### Example:
 ```md
 ![Home Page](screenshots/home.png)
 ![Dashboard](screenshots/dashboard.png)
